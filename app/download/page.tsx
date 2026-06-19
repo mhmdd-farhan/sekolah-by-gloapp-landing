@@ -12,7 +12,7 @@ import {
 import { Container, Eyebrow, Logo } from "@/components/site/ui";
 import { SITE_NAME, WHATSAPP_URL } from "@/lib/site";
 
-const APK_FILE = "/app-release.apk";
+const APK_FILE = "/sekolah-by-gloapp.apk";
 const APK_SIZE = "82.6 MB";
 const APK_VERSION = "1.0.0";
 
