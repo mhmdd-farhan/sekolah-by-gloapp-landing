@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Download } from "lucide-react";
 import { Container, Logo } from "./ui";
 import { WHATSAPP_URL } from "@/lib/site";
 
@@ -8,6 +9,7 @@ const NAV = [
   { label: "Cara Kerja", href: "#cara-kerja" },
   { label: "Lisensi", href: "#lisensi" },
   { label: "FAQ", href: "#faq" },
+  { label: "Unduh App", href: "/download" },
 ];
 
 export function Navbar() {
@@ -34,6 +36,13 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Link
+            href="/download"
+            className="hidden items-center gap-1.5 rounded-lg border border-border bg-card/60 px-3.5 py-2 text-sm font-medium text-foreground transition-colors hover:bg-card sm:inline-flex"
+          >
+            <Download className="size-4" />
+            Unduh Gratis
+          </Link>
           <a
             href={WHATSAPP_URL}
             target="_blank"

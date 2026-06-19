@@ -1,18 +1,33 @@
 import Link from "next/link";
 import { Container, Logo } from "./ui";
 
-const COLUMNS: { title: string; links: string[] }[] = [
+const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Produk",
-    links: ["Fitur", "Lisensi", "Cara Kerja", "Keamanan"],
+    links: [
+      { label: "Fitur", href: "/#fitur" },
+      { label: "Lisensi", href: "/#lisensi" },
+      { label: "Cara Kerja", href: "/#cara-kerja" },
+      { label: "Unduh Aplikasi", href: "/download" },
+    ],
   },
   {
     title: "Peran",
-    links: ["Admin", "Guru", "Orang Tua", "Siswa"],
+    links: [
+      { label: "Admin", href: "/#peran" },
+      { label: "Guru", href: "/#peran" },
+      { label: "Orang Tua", href: "/#peran" },
+      { label: "Siswa", href: "/#peran" },
+    ],
   },
   {
     title: "Perusahaan",
-    links: ["Tentang", "Kontak", "Blog", "Karier"],
+    links: [
+      { label: "Tentang", href: "#" },
+      { label: "Kontak", href: "#" },
+      { label: "Blog", href: "#" },
+      { label: "Karier", href: "#" },
+    ],
   },
 ];
 
@@ -39,12 +54,12 @@ export function Footer() {
               <h4 className="text-sm font-semibold">{col.title}</h4>
               <ul className="flex flex-col gap-2">
                 {col.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <Link
-                      href="#"
+                      href={link.href}
                       className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
-                      {link}
+                      {link.label}
                     </Link>
                   </li>
                 ))}
