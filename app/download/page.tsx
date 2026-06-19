@@ -88,7 +88,7 @@ export default function DownloadPage() {
         <div className="flex flex-col items-center gap-3">
           <a
             href={APK_FILE}
-            download
+            download="sekolah-by-gloapp.apk"
             className="group inline-flex items-center gap-2.5 rounded-xl bg-brand px-7 py-4 text-base font-medium text-brand-foreground shadow-xl shadow-brand/30 transition-transform hover:scale-[1.03]"
           >
             <Download className="size-5 transition-transform group-hover:translate-y-0.5" />

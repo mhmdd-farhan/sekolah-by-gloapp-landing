@@ -3,6 +3,7 @@ import { Hero } from "@/components/site/hero";
 import { Features } from "@/components/site/features";
 import { Roles } from "@/components/site/roles";
 import { HowItWorks } from "@/components/site/how-it-works";
+import { DownloadCta } from "@/components/site/download-cta";
 import { AccessModel } from "@/components/site/access-model";
 import { Pricing } from "@/components/site/pricing";
 import { Faq } from "@/components/site/faq";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <DownloadCta />
         <Features />
         <Roles />
         <HowItWorks />

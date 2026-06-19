@@ -38,10 +38,11 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Link
             href="/download"
-            className="hidden items-center gap-1.5 rounded-lg border border-border bg-card/60 px-3.5 py-2 text-sm font-medium text-foreground transition-colors hover:bg-card sm:inline-flex"
+            aria-label="Unduh aplikasi gratis"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card/60 px-2.5 py-2 text-sm font-medium text-foreground transition-colors hover:bg-card sm:px-3.5"
           >
             <Download className="size-4" />
-            Unduh Gratis
+            <span className="hidden sm:inline">Unduh Gratis</span>
           </Link>
           <a
             href={WHATSAPP_URL}
