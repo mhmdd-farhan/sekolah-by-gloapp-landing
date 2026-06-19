@@ -1,5 +1,33 @@
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
+import Image from "next/image";
+import { SITE_NAME } from "@/lib/site";
+
+/**
+ * Brand mark — the GloApp graduation-cap logo (same artwork as the favicon),
+ * always rendered as a rounded square. Shared by the navbar and footer.
+ */
+export function Logo({
+  size = 36,
+  className,
+}: {
+  size?: number;
+  className?: string;
+}) {
+  return (
+    <Image
+      src="/logo.svg"
+      alt={`Logo ${SITE_NAME}`}
+      width={size}
+      height={size}
+      priority
+      className={cn(
+        "rounded-xl shadow-lg shadow-brand/30 ring-1 ring-white/10",
+        className,
+      )}
+    />
+  );
+}
 
 export function Container({
   className,

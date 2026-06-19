@@ -18,7 +18,7 @@ export function WhatsappPopup() {
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
       {showBubble ? (
-        <div className="animate-in fade-in slide-in-from-bottom-2 w-72 rounded-2xl border border-border bg-card p-4 shadow-2xl shadow-black/25 duration-300">
+        <div className="animate-in fade-in slide-in-from-bottom-2 relative w-72 rounded-2xl border border-border bg-card p-4 shadow-2xl shadow-black/25 duration-300">
           <button
             type="button"
             onClick={() => setDismissed(true)}

@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { GraduationCap } from "lucide-react";
-import { Container } from "./ui";
+import { Container, Logo } from "./ui";
 
 const COLUMNS: { title: string; links: string[] }[] = [
   {
@@ -23,10 +22,8 @@ export function Footer() {
       <Container className="flex flex-col gap-12 py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_repeat(3,1fr)]">
           <div className="flex flex-col gap-3">
-            <Link href="#" className="flex items-center gap-2.5">
-              <span className="grid size-9 place-items-center rounded-xl bg-brand text-brand-foreground">
-                <GraduationCap className="size-5" />
-              </span>
+            <Link href="#" className="flex items-center gap-2.5" aria-label="Sekolah by GloApp — beranda">
+              <Logo size={36} />
               <span className="text-base font-semibold tracking-tight">
                 Sekolah <span className="text-muted-foreground">by GloApp</span>
               </span>

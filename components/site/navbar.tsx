@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { GraduationCap } from "lucide-react";
-import { Container } from "./ui";
+import { Container, Logo } from "./ui";
 import { WHATSAPP_URL } from "@/lib/site";
 
 const NAV = [
@@ -15,10 +14,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <Container className="flex h-16 items-center justify-between">
-        <Link href="#" className="flex items-center gap-2.5">
-          <span className="grid size-9 place-items-center rounded-xl bg-brand text-brand-foreground shadow-lg shadow-brand/30">
-            <GraduationCap className="size-5" />
-          </span>
+        <Link href="#" className="flex items-center gap-2.5" aria-label="Sekolah by GloApp — beranda">
+          <Logo size={36} />
           <span className="text-base font-semibold tracking-tight">
             Sekolah <span className="text-muted-foreground">by gloapp</span>
           </span>
