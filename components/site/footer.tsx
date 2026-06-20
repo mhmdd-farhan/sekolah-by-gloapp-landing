@@ -8,6 +8,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Fitur", href: "/#fitur" },
       { label: "Lisensi", href: "/#lisensi" },
       { label: "Cara Kerja", href: "/#cara-kerja" },
+      { label: "Panduan Pengguna", href: "/docs" },
       { label: "Unduh Aplikasi", href: "/download" },
     ],
   },

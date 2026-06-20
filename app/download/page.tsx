@@ -14,7 +14,7 @@ import { SITE_NAME, WHATSAPP_URL } from "@/lib/site";
 
 const APK_FILE = "/sekolah-by-gloapp.apk";
 const APK_SIZE = "82.6 MB";
-const APK_VERSION = "1.0.0";
+const APK_VERSION = "2.0.0";
 
 export const metadata: Metadata = {
   title: "Download Aplikasi Android",
