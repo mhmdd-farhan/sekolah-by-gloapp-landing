@@ -81,7 +81,7 @@ export function AccessModel() {
                   Lisensi Sekolah
                 </span>
                 <span className="font-mono text-sm text-brand">
-                  Rp3.000.000 — sekali bayar
+                  Rp4.000.000 — sekali bayar
                 </span>
               </div>
             </div>

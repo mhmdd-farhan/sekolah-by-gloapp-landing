@@ -23,7 +23,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "Apakah lisensi dibayar sekali atau berkala?",
-    a: "Lisensi dibayar sekali sebesar Rp3.000.000 per sekolah dan berlaku seumur hidup. Hanya ada biaya operasional Rp100.000 per tahun untuk hosting dan pemeliharaan — tidak ada biaya berulang lainnya.",
+    a: "Lisensi dibayar sekali sebesar Rp4.000.000 per sekolah dan berlaku seumur hidup. Hanya ada biaya operasional Rp100.000 per tahun untuk hosting dan pemeliharaan — tidak ada biaya berulang lainnya.",
   },
   {
     q: "Bisakah satu yayasan mengelola banyak sekolah?",

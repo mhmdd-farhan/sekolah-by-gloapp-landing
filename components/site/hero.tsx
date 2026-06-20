@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Container, Eyebrow } from "./ui";
 import { WHATSAPP_URL } from "@/lib/site";
+import { VideoSection } from "./video-section";
 
 export function Hero() {
   return (
@@ -58,6 +59,8 @@ export function Hero() {
 
         <HeroPreview />
       </Container>
+
+      <VideoSection />
     </section>
   );
 }

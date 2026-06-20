@@ -53,7 +53,7 @@ export function Pricing() {
             <div className="flex flex-col gap-1">
               <div className="flex items-end gap-2">
                 <span className="text-5xl font-semibold tracking-tight">
-                  Rp3.000.000
+                  Rp4.000.000
                 </span>
               </div>
               <span className="inline-flex w-fit items-center gap-1.5 font-mono text-sm text-brand">
